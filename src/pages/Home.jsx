@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const categories = ["Fiction", "Non-Fiction", "Sci-Fi", "History"];
 
 const popularBooks = [
@@ -22,9 +23,7 @@ function Home() {
   return (
     <div className="p-6">
       {/* Welcome */}
-      <h1 className="text-3xl font-bold mb-4">
-        Welcome to Online Library 📚
-      </h1>
+      <h1 className="text-3xl font-bold mb-4">Welcome to Online Library 📚</h1>
 
       {/* Categories */}
       <h2 className="text-xl font-semibold mb-2">Categories</h2>
@@ -50,9 +49,12 @@ function Home() {
             <h3 className="text-lg font-bold">{book.title}</h3>
             <p className="text-gray-600">{book.author}</p>
 
-            <button className="mt-2 text-blue-500 hover:underline">
+            <Link
+              to="/books"
+              className="mt-2 inline-block text-blue-500 hover:underline"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         ))}
       </div>
