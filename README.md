@@ -1,16 +1,93 @@
-# React + Vite
+# Online Library System 📚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple online library system project built using React. The main idea of this project is to allow users to browse books, see details, and also add new books.
 
-Currently, two official plugins are available:
+I made this project as part of my assignment using Vite, React Router, Redux Toolkit, and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🔗 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/your-username/online-library-system
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+* Home page with some book categories
+* List of popular books
+* Browse books with category filter
+* Search books by title or author
+* View book details
+* Add new books using a form
+* Newly added books show instantly
+* 404 page for wrong routes
+
+---
+
+## 🛠️ Technologies Used
+
+* React (Vite)
+* React Router DOM
+* Redux Toolkit
+* Tailwind CSS
+
+---
+
+## 📁 Project Structure
+
+```id="m7p2pw"
+src/
+ ├── components/
+ │    └── Navbar.jsx
+ │
+ ├── pages/
+ │    ├── Home.jsx
+ │    ├── BrowseBooks.jsx
+ │    ├── BookDetails.jsx
+ │    ├── AddBook.jsx
+ │    └── NotFound.jsx
+ │
+ ├── redux/
+ │    ├── store.js
+ │    └── bookSlice.js
+ │
+ ├── data/
+ │    └── books.js
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+```
+
+---
+
+## ⚙️ How to Run
+
+```bash id="8g17tn"
+git clone https://github.com/your-username/online-library-system.git
+cd online-library-system
+npm install
+npm run dev
+```
+
+Then open the link shown in terminal (usually http://localhost:5173)
+
+---
+
+## 📌 Some Notes
+
+* I used dummy data at first, then switched to Redux for managing books
+* New books are added to the top of the list
+* Search works for both title and author
+* Routing is handled using React Router
+
+---
+
+##  Author
+
+SHIBSANKAR BERA
+
+---
+
+
